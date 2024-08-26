@@ -35,4 +35,11 @@ function getRandomUpTo(max) {
 }
   const url = search(address.value, searchEngine.value);
   location.href = '//dont-sue-me-topvaz.topvazgeo.online/launch.html?domain=' + url;
+  var alert = localStorage.getItem('alert');
+  if (alert === 'true'){
+  }
+  else {
+    alert('To make the proxy function, right-click the screen and select reload/refresh frame. You should only need to do this once.');
+    localStorage.setItem('alert', 'true')
+  }
 });
